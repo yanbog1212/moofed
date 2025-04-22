@@ -1,0 +1,14 @@
+{
+  "name": "moofed",
+  "version": "1.0.0",
+  "description": "VanMoof Data Backup Tool",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@noble/ed25519": "^2.0.0",
+    "axios": "^1.4.0"
+  }
+} 
