@@ -14,6 +14,9 @@
 </p>
 
 <p align="center">
+   <a href="https://moofed.lucasnijssen.nl">
+       <img src="https://img.shields.io/badge/Website-moofed.lucasnijssen.nl-blue.svg" alt="Website">
+   </a>
    <a href="https://github.com/lucasnijssen/moofed/actions/workflows/node.js.yml">
        <img src="https://github.com/lucasnijssen/moofed/actions/workflows/node.js.yml/badge.svg" alt="Build Status">
    </a>
@@ -27,6 +30,15 @@
 
 > [!IMPORTANT]
 > Moofed is not an official tool of [VanMoof B.V](https://vanmoof.com). This Node.js tool makes certain features of the bike accessible which may be illegal to use in certain jurisdictions. As this tool hasn&apos;t reached an official stable version some features are not yet available or may not working as expected.
+
+## 📱 Website
+
+Visit our website at [moofed.lucasnijssen.nl](https://moofed.lucasnijssen.nl) for more information and documentation. The website features:
+
+- 🤔 Frequently asked questions
+- 🔧 Troubleshooting guides
+- 📱 Mobile-friendly interface
+- 🔄 Latest updates and news
 
 ## ✨ Features
 

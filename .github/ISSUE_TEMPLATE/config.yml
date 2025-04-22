@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Moofed Website
+    url: https://moofed.lucasnijssen.nl
+    about: Check our website for more information about Moofed
+  - name: GitHub Discussions
+    url: https://github.com/lucasnijssen/moofed/discussions
+    about: Please ask and answer questions here
+  - name: VanMoof Support
+    url: https://www.vanmoof.com/support
+    about: For questions related to VanMoof bikes (not Moofed software) 
