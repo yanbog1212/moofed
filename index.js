@@ -6,7 +6,7 @@
  *  |_| |_| |_|\___/ \___/|_|  \___|\__,_|
  *
  * VanMoof Data Backup Tool
- * Copyright (c) 2024 Moofed Contributors
+ * Copyright (c) 2025 Moofed Contributors
  *
  * This tool is not affiliated with VanMoof B.V.
  * Use at your own risk.
@@ -17,6 +17,7 @@ import fs from 'fs';
 import path from 'path';
 import readline from 'readline';
 import * as ed25519 from '@noble/ed25519';
+import { VersionChecker } from './version-checker.js';
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -32,6 +33,7 @@ class Moofed {
         this.authToken = null;
         this.appToken = null;
         this.backupDir = path.join(process.cwd(), 'moofed_backup');
+        this.versionChecker = new VersionChecker('lucasnijssen', 'moofed');
     }
 
     async authenticate(email, password) {
@@ -154,6 +156,9 @@ class Moofed {
 
     async run() {
         console.log('Welcome to Moofed - Your VanMoof Data Backup Tool\n');
+        
+        // Check for updates
+        await this.versionChecker.checkVersion(process.env.npm_package_version || '1.0.0');
 
         const email = await new Promise(resolve => rl.question('Enter your VanMoof email: ', resolve));
         const password = await new Promise(resolve => rl.question('Enter your VanMoof password: ', resolve));
